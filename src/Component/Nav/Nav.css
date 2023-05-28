@@ -1,0 +1,100 @@
+nav{
+    background-color: #fff;
+    width: 100%;
+    height: auto;
+    border-radius: 0% !important;
+}
+nav .navbar-nav{
+    margin-top: 12px;
+}
+nav .navbar-nav a{
+    color: var(--main-color);
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-right: 10px;
+    font-size: 16px;
+    transition: .3s ease all;
+
+}
+nav .navbar-nav a:hover,
+nav .navbar-nav a:focus{
+    color: var(--orrange-color) !important;
+}
+
+nav .navbar-nav .active{
+    color: var(--orrange-color) !important;
+}
+
+nav .navbar-nav button{
+    background-color: var(--btn-color) !important;
+    border: 1px solid var(--btn-color);
+    width: 200px;
+    height: 50px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-top: -7px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s ease-in-out;
+}
+
+nav .navbar-nav button span{
+
+    background-color: #fff;
+    color: var(--btn-color);
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    text-align: center;
+    padding-top: 5px;
+    line-height: 40px;
+    margin-left: 15px;
+}
+
+nav .navbar-nav button:hover{
+    background-color: rgb(66, 66, 175);
+    border: 1px solid rgb(66, 66, 175);
+}
+
+.navbar-nav .dropdown-menu{
+    position: static;
+    background-color: #fff;
+    border: 1px solid #fff;
+}
+.navbar-nav .dropdown-menu li{
+    width: 100px;
+    height: 30px !important;
+    position: relative;
+}
+.navbar-nav .dropdown-menu a{
+    color: #444;
+    font-size: 14px;
+    line-height: 30px;
+    position: relative;
+    transition: .3s ease all;
+}
+nav .navbar-nav svg{
+    text-align: center;
+}
+
+.navbar-nav .dropdown-menu a:hover{
+    color: var(--btn-color) !important;
+}
+
+/* .navbar-nav .dropdown-menu li::before{
+    position:absolute;
+    content: "";
+    bottom: -5px;
+    left: 0;
+    width: 10px;
+    height: 4px;
+    background-color: var(--main-color);
+
+} */
+
+@media only screen and(max-width:993px){
+
+}
