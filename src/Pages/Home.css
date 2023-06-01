@@ -21,7 +21,7 @@ header .row{
 header .row h5{
     color: var(--btn-color);
     font-size: 20px;
-    margin: 40px 0px 10px 0px;
+    margin: 40px 0px 30px 0px;
 }
 
 header h2{
@@ -66,7 +66,7 @@ header .header-box{
 
 header img{
     max-width: 100%;
-    width: 430px;
+    width: 530px;
     height: auto;
     animation: mover 2s infinite alternate;
     transition: .3s ease all;
@@ -92,3 +92,15 @@ header svg{
     top: 10%;
     animation: mover 1s infinite alternate;
 }
+
+.container-back{
+    margin-top: 0px;
+    position: relative !important;
+    background-image: url(../Assets/img1.815eb17a.jpg);
+    background-repeat: no-repeat;
+    height: 700px;
+    background-position: 50%;
+    background-size: cover;
+    overflow: hidden;
+    z-index: 1;
+  }

@@ -1,70 +1,150 @@
-import React from 'react'
-import '../index.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPhone} from '@fortawesome/free-solid-svg-icons'
-import FooterLogo from '../Assets/footer-logo.png';
-import Face from '../Assets/face.png';
-import Insta from '../Assets/insta.png';
-// import LinkdIn from '../Assets/linkin.png';
-import Tweet from '../Assets/tweet.png';
-
-const Footer = () => {
+import Logo from "../Assets/logo1.png";
+import "../Footer/Footer.css";
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaInstagram,
+  FaLinkedin,
+} from "react-icons/fa";
+import { Link } from "react-router-dom";
+function Footer() {
   return (
-    <div className='container'>
-        <div className='row'>
-            <div className='col-md-3 col-sm-6'>
-               <img src={FooterLogo} alt='' className='footerlogo'/>
-               <p>Lorem ipsum is dolor sit amet, csectetur adipiscing elit, 
-                dolore smod tempor incididunt ut labore et.
-               </p>
-               <div className='footer-contact'>
-                <div className='footer-icon'>
-                <FontAwesomeIcon icon={faPhone}/>
+    <div>
+      <footer className="footer">
+        <div className="footer-top">
+          <div className="container">
+            <div className="row">
+              <div className="col-xl-3 col-lg-3 col-md-6">
+                <div className="widget widget-info">
+                  <div className="footer-logo">
+                    <Link to={"/"}>
+                      <img src={Logo} alt="img" />
+                    </Link>
+                  </div>
+                  <div className="ft-contact">
+                    <p>Protecting and Taking Care To Of Your Health</p>
+                  </div>
                 </div>
-                <div className='footer-text'>
-                    <h6>Contact Us</h6>
-                    <h4>(+92) 3088123132</h4>
+              </div>
+              <div className="col-xl-3 col-lg-3 col-6">
+                <div className="widget footer-widget ml-50">
+                  <h3 className="footer-title">Quick Links</h3>
+                  <ul>
+                    <li>
+                      <Link to={"/ourteam"}>
+                        <span>Doctors</span>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to={"/team"}>
+                        <span>Creators</span>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to={"/aboutus"}>
+                        <span>About Us</span>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to={"/service"}>
+                        <span>Services</span>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to={"/booking"}>
+                        <span>Booking</span>
+                      </Link>
+                    </li>
+                   
+                  </ul>
                 </div>
-               </div>
-            </div>
-            <div className='col-md-3 col-sm-6'>
-                <h2>Quick Links</h2>
-                <ul>
-                    <li><a href='home'>Home</a></li>
-                    <li><a href='about'>About Us</a></li>
-                    <li><a href='booking'>Booking</a></li>
-                    <li><a href='services'>services</a></li>
-                    <li><a href='our-team'>Our Team</a></li>
-                </ul>
-                
+              </div>
+              <div className="col-xl-3 col-lg-3 col-6">
+                <div className="widget footer-widget ml-50">
+                  <h3 className="footer-title">Our Services</h3>
+                  <ul>
+                    <li>
+                      <Link to="">
+                        <span>Dental Care</span>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="">
+                        <span>ENT Clinic</span>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="">
+                        <span>Cardiology</span>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="">
+                        <span>Precise Diagnosis</span>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="">
+                        <span>Ambulance Services</span>
+                      </Link>
+                    </li>
+                  </ul>
                 </div>
-                <div className='col-md-3 col-sm-6'>
-                <h2>Our Services</h2>
-                <ul>
-                    <li><a href='dental'>Dental Care</a></li>
-                    <li><a href='cardiac'>Cardiac Clinic</a></li>
-                    <li><a href='therapy'>Massage Therapy</a></li>
-                    <li><a href='diagnosis'>Precise Diagnosis</a></li>
-                    <li><a href='ambulance'>Abmbulance Services</a></li>
-                </ul>
-                
-                </div>
-                <div className='col-md-3 col-sm-6'>
-                    <h2>Subscribe</h2>
-                    <form>
-                        <input type='email'/>
-                        <button type='submit'>Subscribe Now</button>
-                    </form>
-                    <ul className='social'>
-                        <li><a href='fb'><img src={Face} alt='face'/></a></li>
-                        <li><a href='ig'><img src={Insta} alt='ig'/></a></li>
-                        {/* <li><a href='lki'><img src={LinkdIn} alt='lki'/></a></li> */}
-                        <li><a href='tw'><img src={Tweet} alt='tw'/></a></li>
+              </div>
+              <div className="col-xl-3 col-lg-3 col-md-6">
+                <div className="widget widget-form">
+                  <h3 className="footer-title">More About us</h3>
+
+                  <div className="footer-social-link">
+                    <ul>
+                      <li>
+                        <Link to="">
+                          <FaFacebookF />
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="">
+                          <FaTwitter />
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="">
+                          <FaInstagram />
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="">
+                          <FaLinkedin />
+                        </Link>
+                      </li>
                     </ul>
+                  </div>
                 </div>
+              </div>
+            </div>
+          </div>
         </div>
+        <div className="container">
+          <div className="footer-bottom">
+            <div className="row">
+              <div className="col-12 text-center">
+                <p className="copyright-text">
+                  Copyright © 2023 Redesign & Redeveloped by
+                  <a
+                  href="/home"
+                    className="text-secondary"
+                    target="_blank"
+                  >
+                    Ninja TeckTicks
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
-  )
+  );
 }
 
-export default Footer
+export default Footer;

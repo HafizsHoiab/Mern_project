@@ -80,7 +80,7 @@ nav .navbar-nav svg{
     text-align: center;
 }
 
-.navbar-nav .dropdown-menu a:hover{
+nav .navbar-nav .dropdown-menu a:hover{
     color: var(--btn-color) !important;
 }
 
